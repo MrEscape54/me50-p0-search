@@ -12,7 +12,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="googlelogo_color_272x92dp.png" alt=""></a>
+          <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,35 +34,42 @@
     <hr>
     <div class="form-container">
       <div class="search-container">
+        <p>Find pages with...</p>
         <form action="https://google.com/search">
           <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">all these words:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="as_q" id="inputEmail3">
+            <label for="all" class="col-sm-2 col-form-label">all these words:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="as_q" id="all">
             </div>
+            <p class="col-sm-6">Type the important words: <code>tri-colour rat terrier</code></p>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">this exact word or phrase:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="as_epq" id="inputPassword3">
+            <label for="exact" class="col-sm-2 col-form-label">this exact word or phrase:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="as_epq" id="exact">
             </div>
+            <p class="col-sm-6">Put exact words in quotes: <code>"rat terrier"</code></p>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">any of these words:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="as_oq" id="inputPassword3">
+            <label for="any" class="col-sm-2 col-form-label">any of these words:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="as_oq" id="any">
             </div>
+            <p class="col-sm-6">Type OR between all the words you want: <code>miniature OR standard</code></p>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">none of these words:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="as_eq" id="inputPassword3">
+            <label for="none" class="col-sm-2 col-form-label">none of these words:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" name="as_eq" id="none">
             </div>
+            <p class="col-sm-6">Put a minus sign just before words that you don't want: <code>-rodent, -"Jack Russell"</code></p>
           </div>
           <div class="form-group row">
-            <div class="col-sm-10">
+            <label class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-4 text-right">
               <button type="submit" class="btn btn-primary">Advanced Search</button>
             </div>
+            <label class="col-sm-4 col-form-label"></label>
           </div>
         </form>
       </div>
